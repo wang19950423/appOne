@@ -40,7 +40,7 @@ header {
             .id {
                 font-size: pr(12);
                 margin-top: pr(5);
-                color:#ccc;
+                color: #ccc;
             }
             .like {
                 margin-top: pr(10);
@@ -108,9 +108,38 @@ header {
                     font-size: pr(18);
                 }
                 .second {
-                    margin-top: pr(5);  
-                    font-size: pr(14); 
-                    color:#ccc;
+                    margin-top: pr(5);
+                    font-size: pr(14);
+                    color: #ccc;
+                }
+            }
+        }
+    }
+    .person, .classroom, .share, .setting {
+        a {
+            width: 100%;
+            height: pr(45);
+            display: flex;
+            justify-content: space-between;
+            border-bottom: pr(1) solid #ccc;
+            .first {
+                display: flex;
+                align-items: center;
+                img {
+                    width: pr(30);
+                    margin: 0 pr(10);
+                }
+                span {
+                    font-size: pr(18);
+                    color:#000;
+                }
+            }
+            .second {
+                display: flex;
+                align-items: center;
+                img {
+                    width: pr(12);
+                    margin-right: pr(15);
                 }
             }
         }

@@ -132,6 +132,33 @@ header .content .right .box .second {
   font-size: 0.3733333333rem;
   color: #ccc;
 }
+header .person a, header .classroom a, header .share a, header .setting a {
+  width: 100%;
+  height: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.0266666667rem solid #ccc;
+}
+header .person a .first, header .classroom a .first, header .share a .first, header .setting a .first {
+  display: flex;
+  align-items: center;
+}
+header .person a .first img, header .classroom a .first img, header .share a .first img, header .setting a .first img {
+  width: 0.8rem;
+  margin: 0 0.2666666667rem;
+}
+header .person a .first span, header .classroom a .first span, header .share a .first span, header .setting a .first span {
+  font-size: 0.48rem;
+  color: #000;
+}
+header .person a .second, header .classroom a .second, header .share a .second, header .setting a .second {
+  display: flex;
+  align-items: center;
+}
+header .person a .second img, header .classroom a .second img, header .share a .second img, header .setting a .second img {
+  width: 0.32rem;
+  margin-right: 0.4rem;
+}
 
 footer {
   width: 100%;
