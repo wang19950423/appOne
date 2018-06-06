@@ -1,0 +1,171 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+}
+header .find {
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+}
+header .find::before {
+  background: url("../img/05-banner/banner9.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 3.2rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*-1 可以当背景*/
+  -webkit-filter: blur(50px);
+  filter: blur(1px);
+}
+header .find img {
+  margin-left: 0.5333333333rem;
+  width: 1.8666666667rem;
+  border-radius: 50%;
+}
+header .find .box {
+  margin-left: 0.5333333333rem;
+  height: 1.8666666667rem;
+}
+header .find .box .name {
+  font-size: 0.48rem;
+}
+header .find .box .id {
+  font-size: 0.32rem;
+  margin-top: 0.1333333333rem;
+  color: #ccc;
+}
+header .find .box .like {
+  margin-top: 0.2666666667rem;
+  font-size: 0.3733333333rem;
+}
+header .find .box .like span {
+  margin-right: 0.5333333333rem;
+}
+header .content {
+  width: 100%;
+  height: 2.1333333333rem;
+  display: flex;
+  border-bottom: 0.0266666667rem solid #ccc;
+}
+header .content .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 0.0266666667rem solid #ccc;
+}
+header .content .left img {
+  width: 1.3333333333rem;
+  margin-left: 0.1333333333rem;
+}
+header .content .left .box {
+  margin-left: 0.1333333333rem;
+}
+header .content .left .box p.second {
+  margin-top: 0.24rem;
+}
+header .content .left .box p .fuli {
+  font-size: 0.48rem;
+}
+header .content .left .box p .shangshi {
+  font-size: 0.32rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 0.2666666667rem;
+  width: 0.96rem;
+  height: 0.5333333333rem;
+  background-color: red;
+}
+header .content .left .box p img {
+  width: 0.4266666667rem;
+}
+header .content .left .box p .num {
+  color: green;
+}
+header .content .right {
+  height: 1.0666666667rem;
+  width: 50%;
+  display: flex;
+  margin-top: 0.4rem;
+}
+header .content .right img {
+  width: 1.0666666667rem;
+  margin-left: 0.2666666667rem;
+}
+header .content .right .box {
+  margin-left: 0.2666666667rem;
+}
+header .content .right .box .first {
+  font-size: 0.48rem;
+}
+header .content .right .box .second {
+  margin-top: 0.1333333333rem;
+  font-size: 0.3733333333rem;
+  color: #ccc;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: #d3d3d3;
+  height: 1.3333333333rem;
+  bottom: 0;
+  z-index: 999;
+}
+footer a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.6;
+}
+footer a:nth-child(3) img {
+  width: 1.0666666667rem;
+  height: 0.64rem;
+}
+footer a.active {
+  opacity: 1;
+}
+footer a img {
+  width: 0.64rem;
+  height: 0.64rem;
+}
+footer a p {
+  font-size: 0.32rem;
+  color: #000;
+}
+
+/*# sourceMappingURL=personage.css.map */

@@ -1,0 +1,97 @@
+@import './comment.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    .swiper-container {
+        .swiper-wrapper {
+            margin-top: pr(40);
+            .swiper-slide {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .swiper-pagination {
+            // position: fixed;
+            position: absolute;
+            top:0;
+            display: flex;
+            // background-color: #fff;
+            justify-content: space-around;
+            .swiper-pagination-bullet {
+                width: 25%;
+                margin: 0;
+                // width: 50%;
+                height: pr(40);
+                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: pr(0);
+                background-color: #fff;
+                &:nth-child(1)::before {
+                    content: "动态";
+                    font-size: pr(16);
+                    line-height: pr(40);
+                    text-align: center;
+                }
+                &:nth-child(2)::before {
+                    content: "消息";
+                    font-size: pr(16);
+                    line-height: pr(40);
+                    text-align: center;
+                }
+                &:nth-child(3)::before {
+                    content: "聊天";
+                    font-size: pr(16);
+                    line-height: pr(40);
+                    text-align: center;
+                }
+            }
+            .swiper-pagination-bullet-active {
+                background-color: #fff;
+                border-bottom: pr(2) solid green;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-color: #d3d3d3;
+    height: pr(50);
+    bottom: 0;
+    z-index: 999;
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.6;
+        &:nth-child(3) {
+            img {
+                width: pr(40);
+                height: pr(24);
+            }
+        }
+        &.active {
+            opacity: 1;
+        }
+        img {
+            width: pr(24);
+            height: pr(24);
+        }
+        p {
+            font-size: pr(12);
+            color:#000;
+        }
+    }
+}
